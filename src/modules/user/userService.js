@@ -159,7 +159,7 @@ const resetPassword = async (otp, password, email) => {
   );
   return newPassword;
   } catch (error) {
-    throw Error(error.message)
+    throw new Error(error.message)
   }
   
 };
